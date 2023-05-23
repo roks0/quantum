@@ -44,12 +44,18 @@ h1{
     font-family:'Noto Sans', sans-serif;
     display: flex;
     justify-content: center;
-    flex-direction: row;
     font-size: 4.0rem;
     font-weight: bold;
     color: antiquewhite;
 }
-
+h2{
+    font-family:'Noto Sans', sans-serif;
+    font-size: 2.3rem;
+    color: rgb(10, 9, 8);
+}
+h3{
+    font-size: 1.5rem;
+}
 /*----barra de navegacion-----*/
 nav{
     display: flex;
@@ -58,12 +64,11 @@ nav{
 }
 .navBar{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     list-style: none;
-    gap: 50px;
+    gap: 20px;
     font-size: 2.5rem;
-    margin: 10px;
+    margin-top: 5px;
     border: 1px;
     padding: 0;
 }
@@ -87,23 +92,73 @@ ul li{
 
 .featuredProductsContainer{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom:10px;
+}
+.mainH2{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
 .featuredProducts{
+    margin: 3px;
+    border-radius: 50px;
     display: inline-block;
-    margin: 10px;
-    width: 320px;
-    height: 420px;
+    width: 340px;
+    height: 450px;
+}
+.productsDesc{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    
 }
 
 
 /*------Fin home--------*/
 
 /*------Shop--------*/
+.shopMain{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.newCollectionImage{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    overflow:hidden;
+}
+.newCollectionImage img {
+    max-width: 100%;
+    height: auto; 
+}
+.productsDesc{
+    font-size: 1.2;
+}
+.shopProducts{
+    display: flex;
+}
 
-
+.shopProducts article {
+    margin: 5px;
+}
+.shopProducts img {
+    height: 40vh;
+    max-width: 100%;
+    border-radius: 30px;
+    justify-content: center;
+}
+.shopProducts article button {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    
+}
 /*------Fin shop--------*/
 
 /*------about --------*/
@@ -169,14 +224,19 @@ label{
 
 
 /*-------footer------*/
-h3{
-    font-size: 1.4rem;
-}
+
 .footer{
     background-image: url("../assets/banner1.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.footerC{
+    display: flex;
+    justify-content: flex-end;
 }
 .socials{
     height: 15%;
@@ -199,3 +259,58 @@ h3{
 }
 
 /*-----fin footer------*/
+
+
+/*-------media queries------*/
+
+/*-------tablet------*/
+@media only screen and (max-width:768px){
+    
+}
+
+/*-------mobile------*/
+@media only screen and (max-width:576px){
+/*-------estilos generales------*/
+header{
+    flex-direction: column;
+}
+/*-------index------*/
+.featuredProductsContainer{
+    flex-direction: column;
+}
+/*------contact--------*/
+form{
+    height: auto;
+    margin-left: 150px;
+}
+/*-------shop------*/
+.shopProducts{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.shopProducts article {
+    margin: 2px;
+    margin-top: 5px;
+}
+.mainH2{
+    writing-mode:horizontal-tb;
+    text-orientation: sideways-right;
+}
+.newCollectionImage{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*-------about------*/
+.aboutContent{
+    height: 60%;
+    line-height: 1.4;
+    white-space: pre-line;
+}
+
+
+/*-------footer------*/
+.footer{
+    justify-content: center;
+}
+}
