@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <title>quantum</title>
 </head>
 <body>
@@ -15,14 +18,32 @@
             </div> -->
         <h1>wear your true colors</h1>
         </div>
-        <nav class="navBar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="./pages/shop.html">Shop</a></li>
-                <li><a href="./pages/about.html">About Us</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
-                <li><a href="./pages/faq.html">FAQ</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg" data-bs-theme="light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><!--<img src="./assets/logo33.png" alt="logo">--></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/faq.html">FAQ</a>
+            </li>
+        </ul>
+            </div>
+        </div>
         </nav>
     </header>
     <main>
@@ -32,20 +53,20 @@
                     <img class="featuredProducts" src="./assets/product1.jpg" alt="Product 1">
                     <div class="productDesc"><h3>fall 2023</h3>
                     <p>fall 23 combo. includes shoes, pants and tshirt and shirt</p>
-                    <button>Add to Cart</button>
+                    <button type="button" class="btn btn-dark">add to cart</button>
                     </div>
                 </article>
                 <article>
                     <img class="featuredProducts" src="./assets/product2.jpg" alt="Product 2">
             <h3>bussiness attire</h3>
             <p>bussiness combo. includes full suit plus shoes</p>
-            <button>Add to Cart</button>
+            <button type="button" class="btn btn-dark">add to cart</button>
                 </article>
                 <article>
                     <img class="featuredProducts" src="./assets/product3.jpg" alt="Product 3">
             <h3>street wear</h3>
             <p>steet combo. includes pants, t-shirt and jacket</p>
-            <button>Add to Cart</button>
+            <button type="button" class="btn btn-dark">add to cart</button>
                 </article>
         </section>
     </main>
@@ -60,6 +81,7 @@
             </section>
         </footer>
         <p class="footerC">&copy; 2023 quantum. All rights reserved.</p>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 </body>
 </html>

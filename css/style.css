@@ -32,14 +32,9 @@ header{
     height: 15vh;
     padding: 0 20px;
 }
-/*.logo img{
-    height: 20%;
-    max-width: 20%;
-    margin-left: 5px;
-    background-repeat: no-repeat;
-    background-size: 55vh;
-    width: 25vh;
-}*/
+
+
+
 h1{
     font-family:'Noto Sans', sans-serif;
     display: flex;
@@ -54,15 +49,17 @@ h2{
     color: rgb(10, 9, 8);
 }
 h3{
+    font-family:'Noto Sans', sans-serif;
     font-size: 1.5rem;
 }
 /*----barra de navegacion-----*/
-nav{
-    display: flex;
-    justify-content: center;
+/*.navbar-brand{
+    width: 50px;
     height: 50px;
-}
-.navBar{
+    align-self: left;
+    justify-self: left;
+}*/
+.navbar-nav{
     display: flex;
     justify-content: center;
     list-style: none;
@@ -72,18 +69,19 @@ nav{
     border: 1px;
     padding: 0;
 }
-ul li{
+.nav-item{
     display: inline-block;
     list-style: none; 
 }
-.navBar li a{
+.navbar-nav li a{
     text-decoration: none;
     color: black;
     padding: 0 10px;
 }
-.navBar li a:hover{
+.navbar-nav li a:hover{
     color: rgba(255, 0, 128, 0.394);
 }
+
 /*------fin barra de navegacion------*/
 
 /*-------mains--------*/
@@ -166,6 +164,7 @@ ul li{
     margin-bottom: 10px;
     margin-top: 10px;
     font-size: 1.3rem;
+    font-family:'Noto Sans', sans-serif;
     height: 60vh;
     line-height: 1.4;
     white-space: pre-line;
