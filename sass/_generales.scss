@@ -1,0 +1,103 @@
+/*-------generales------*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Silkscreen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color:beige;
+    font-family:'Noto Sans', sans-serif
+}
+header{
+    width: 100%;
+    font-family:'Noto Sans', sans-serif;
+    align-items: center;
+    .navbar-nav{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 20px;
+        font-size: 2.5rem;
+        margin-top: 5px;
+        border: 1px;
+        padding: 0;
+    }li a{
+        text-decoration: none;
+        color: black;
+        padding: 0 10px;
+    }.navbar-nav li a:hover{
+        color: rgba(255, 0, 128, 0.394);
+    }.nav-item{
+        display: inline-block;
+        list-style: none; 
+    }
+}
+.welcomeBanner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../assets/banner1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    flex-grow: 1;
+    height: 15vh;
+    padding: 0 20px;
+}
+
+h1{
+    font-family:'Noto Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 4.0rem;
+    font-weight: bold;
+    color: antiquewhite;
+}
+h2{
+    font-family:'Noto Sans', sans-serif;
+    font-size: 2.3rem;
+    color: rgb(10, 9, 8);
+}
+h3{
+    font-family:'Noto Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+/*-------footer------*/
+
+.footer{
+    background-image: url("../assets/banner1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.footerC{
+    display: flex;
+    justify-content: flex-end;
+}
+.socials{
+    height: 15%;
+    display: inline-block;
+    grid-column: 3/4;
+    justify-self: right;
+}
+.networks{
+    height: 15%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content:right;
+    gap: 20px;
+}
+.iconStyle{
+    height:40px;
+    margin-left:20px;
+    margin-top:5px;
+}

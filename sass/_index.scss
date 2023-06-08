@@ -1,0 +1,25 @@
+/*-------index------*/
+.featuredProductsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:10px;
+}
+.mainH2{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+.featuredProducts{
+    margin: 3px;
+    border-radius: 50px;
+    display: inline-block;
+    width: 340px;
+    height: 450px;
+}
+.productsDesc{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    
+}

@@ -1,0 +1,56 @@
+/*-------media queries------*/
+
+/*-------tablet------*/
+@media only screen and (max-width:768px){
+    
+}
+
+/*-------mobile------*/
+@media only screen and (max-width:576px){
+/*-------estilos generales------*/
+header{
+    flex-direction: column;
+}
+/*-------index------*/
+.navbar-collapse{
+    display: flex;
+    justify-content: center ;
+}
+.featuredProductsContainer{
+    flex-direction: column;
+}
+/*------contact--------*/
+form{
+    height: auto;
+    margin-left: 150px;
+}
+/*-------shop------*/
+.shopProducts{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}article {
+    margin: 2px;
+    margin-top: 6px;
+}
+.mainH2{
+    writing-mode:horizontal-tb;
+    text-orientation: sideways-right;
+}
+.newCollectionImage{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*-------about------*/
+.aboutContent{
+    height: 60%;
+    line-height: 1.4;
+    white-space: pre-line;
+}
+
+
+/*-------footer------*/
+.footer{
+    justify-content: center;
+}
+}

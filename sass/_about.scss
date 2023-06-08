@@ -1,0 +1,18 @@
+/*-------about------*/
+.aboutContent{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-family:'Noto Sans', sans-serif;
+    height: 60vh;
+    line-height: 1.4;
+    white-space: pre-line;
+}
+.highlight {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.719);
+&:hover{
+    color: rgba(255, 0, 128, 0.394);
+}
+}
+

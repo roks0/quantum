@@ -1,313 +1,294 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Silkscreen&display=swap');
-/*
-font-family: 'Noto Sans', sans-serif;
-font-family: 'Silkscreen', cursive;
-*/
-*{
-    margin: 0;
-    padding: 0;
-    box-shadow: border-box;
-}
-html{
-    font-size: 62.5%;
-}
-body{
-    background-color:beige;
-    font-family:'Noto Sans', sans-serif
-}
-header{
-    width: 100%;
-    font-family:'Noto Sans', sans-serif;
-    align-items: center;
-}
-.welcomeBanner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url("../assets/banner1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: space-between;
-    flex-grow: 1;
-    height: 15vh;
-    padding: 0 20px;
+/*-------generales------*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Silkscreen&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
 }
 
-
-
-h1{
-    font-family:'Noto Sans', sans-serif;
-    display: flex;
-    justify-content: center;
-    font-size: 4.0rem;
-    font-weight: bold;
-    color: antiquewhite;
-}
-h2{
-    font-family:'Noto Sans', sans-serif;
-    font-size: 2.3rem;
-    color: rgb(10, 9, 8);
-}
-h3{
-    font-family:'Noto Sans', sans-serif;
-    font-size: 1.5rem;
-}
-/*----barra de navegacion-----*/
-.navbar-nav{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 20px;
-    font-size: 2.5rem;
-    margin-top: 5px;
-    border: 1px;
-    padding: 0;
-}
-.nav-item{
-    display: inline-block;
-    list-style: none; 
-}
-.navbar-nav li a{
-    text-decoration: none;
-    color: black;
-    padding: 0 10px;
-}
-.navbar-nav li a:hover{
-    color: rgba(255, 0, 128, 0.394);
+html {
+  font-size: 62.5%;
 }
 
-/*------fin barra de navegacion------*/
-
-/*-------mains--------*/
-
-/*------home--------*/
-
-.featuredProductsContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom:10px;
-}
-.mainH2{
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-}
-.featuredProducts{
-    margin: 3px;
-    border-radius: 50px;
-    display: inline-block;
-    width: 340px;
-    height: 450px;
-}
-.productsDesc{
-    margin-left: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-self: center;
-    
+body {
+  background-color: beige;
+  font-family: "Noto Sans", sans-serif;
 }
 
-
-/*------Fin home--------*/
-
-/*------Shop--------*/
-.shopMain{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
+header {
+  width: 100%;
+  font-family: "Noto Sans", sans-serif;
+  align-items: center;
 }
-.newCollectionImage{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    width: 100%;
-    overflow:hidden;
+header .navbar-nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  font-size: 2.5rem;
+  margin-top: 5px;
+  border: 1px;
+  padding: 0;
 }
-.newCollectionImage img {
-    max-width: 100%;
-    height: auto; 
+header li a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
 }
-.productsDesc{
-    font-size: 1.2;
+header .navbar-nav li a:hover {
+  color: rgba(255, 0, 128, 0.394);
 }
-.shopProducts{
-    display: flex;
-}
-
-.shopProducts article {
-    margin: 5px;
-}
-.shopProducts img {
-    height: 40vh;
-    max-width: 100%;
-    border-radius: 30px;
-    justify-content: center;
-}
-.shopProducts article button {
-    display: flex;
-    justify-content: center;
-    align-self: flex-end;
-    
-}
-/*------Fin shop--------*/
-
-/*------about --------*/
-.aboutContent{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 1.3rem;
-    font-family:'Noto Sans', sans-serif;
-    height: 60vh;
-    line-height: 1.4;
-    white-space: pre-line;
-}
-.highlight {
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.719);
-}
-.highlight:hover{
-    color: rgba(255, 0, 128, 0.394);
+header .nav-item {
+  display: inline-block;
+  list-style: none;
 }
 
-
-/*------Fin about--------*/
-
-/*------contact--------*/
-fieldset {
-    padding: 20px;
-    width: 45%;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-.mailingList{
-    font-family: 'Noto Sans' ;
-    font-weight: bold;
-    font-size: 1.6rem;
-    }
-form{
-    height: 50vh;
-    margin-bottom: 10px;
-    margin-left: 20px;
-}
-label{
-    font-size: 1.2rem;
-}
-.formStyle{
-    font-size: 1.3rem;
+.welcomeBanner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../assets/banner1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-between;
+  flex-grow: 1;
+  height: 15vh;
+  padding: 0 20px;
 }
 
-
-/*------Fin contact--------*/
-
-.faq {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+h1 {
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: bold;
+  color: antiquewhite;
 }
 
-/*------faq--------*/
+h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2.3rem;
+  color: rgb(10, 9, 8);
+}
 
-
-/*------Fin faq--------*/
-
-/*------fin mains------*/
-
+h3 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.5rem;
+}
 
 /*-------footer------*/
-
-.footer{
-    background-image: url("../assets/banner1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-.footerC{
-    display: flex;
-    justify-content: flex-end;
-}
-.socials{
-    height: 15%;
-    display: inline-block;
-    grid-column: 3/4;
-    justify-self: right;
-}
-.networks{
-    height: 15%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content:right;
-    gap: 20px;
-}
-.iconStyle{
-    height:40px;
-    margin-left:20px;
-    margin-top:5px;
+.footer {
+  background-image: url("../assets/banner1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-/*-----fin footer------*/
-
-
-/*-------media queries------*/
-
-/*-------tablet------*/
-@media only screen and (max-width:768px){
-    
+.footerC {
+  display: flex;
+  justify-content: flex-end;
 }
 
-/*-------mobile------*/
-@media only screen and (max-width:576px){
-/*-------estilos generales------*/
-header{
-    flex-direction: column;
+.socials {
+  height: 15%;
+  display: inline-block;
+  grid-column: 3/4;
+  justify-self: right;
 }
+
+.networks {
+  height: 15%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: right;
+  gap: 20px;
+}
+
+.iconStyle {
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
 /*-------index------*/
-.navbar-collapse{
-    display: flex;
-    justify-content: center ;
+.featuredProductsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
-.featuredProductsContainer{
-    flex-direction: column;
+
+.mainH2 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }
-/*------contact--------*/
-form{
-    height: auto;
-    margin-left: 150px;
+
+.featuredProducts {
+  margin: 3px;
+  border-radius: 50px;
+  display: inline-block;
+  width: 340px;
+  height: 450px;
 }
+
+.productsDesc {
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+
 /*-------shop------*/
-.shopProducts{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+.shopMain {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.newCollectionImage {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  overflow: hidden;
+}
+.newCollectionImage img {
+  max-width: 100%;
+  height: auto;
+}
+
+.productsDesc {
+  font-size: 1.2;
+}
+
+.shopProducts {
+  display: flex;
 }
 .shopProducts article {
+  margin: 5px;
+}
+.shopProducts img {
+  height: 40vh;
+  max-width: 100%;
+  border-radius: 30px;
+  justify-content: center;
+}
+.shopProducts article button {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+/*-------about------*/
+.aboutContent {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-family: "Noto Sans", sans-serif;
+  height: 60vh;
+  line-height: 1.4;
+  white-space: pre-line;
+}
+
+.highlight {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.719);
+}
+.highlight:hover {
+  color: rgba(255, 0, 128, 0.394);
+}
+
+/*-------faq------*/
+fieldset {
+  padding: 20px;
+  width: 45%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.mailingList {
+  font-family: "Noto Sans";
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+form {
+  height: 50vh;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+.formStyle {
+  font-size: 1.3rem;
+}
+
+/*-------faq------*/
+.faq {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+/*-------media queries------*/
+/*-------tablet------*/
+/*-------mobile------*/
+@media only screen and (max-width: 576px) {
+  /*-------estilos generales------*/
+  header {
+    flex-direction: column;
+  }
+  /*-------index------*/
+  .navbar-collapse {
+    display: flex;
+    justify-content: center;
+  }
+  .featuredProductsContainer {
+    flex-direction: column;
+  }
+  /*------contact--------*/
+  form {
+    height: auto;
+    margin-left: 150px;
+  }
+  /*-------shop------*/
+  .shopProducts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  article {
     margin: 2px;
     margin-top: 6px;
-}
-.mainH2{
-    writing-mode:horizontal-tb;
+  }
+  .mainH2 {
+    writing-mode: horizontal-tb;
     text-orientation: sideways-right;
-}
-.newCollectionImage{
+  }
+  .newCollectionImage {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-/*-------about------*/
-.aboutContent{
+  }
+  /*-------about------*/
+  .aboutContent {
     height: 60%;
     line-height: 1.4;
     white-space: pre-line;
-}
-
-
-/*-------footer------*/
-.footer{
+  }
+  /*-------footer------*/
+  .footer {
     justify-content: center;
+  }
 }
-}
+
+/*# sourceMappingURL=style.css.map */
