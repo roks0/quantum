@@ -1,5 +1,9 @@
 /*-------generales------*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Silkscreen&display=swap');
+
+/*-------variables------*/
+$primary-font: 'Noto Sans', sans-serif;
+/*-------fin variables------*/
 *{
     margin: 0;
     padding: 0;
@@ -8,13 +12,18 @@
 html{
     font-size: 62.5%;
 }
+
+/*-------mixings------*/
+@mixin font-gral {
+    font-family: $primary-font;
+}
+/*-------fin mixings------*/
 body{
     background-color:beige;
-    font-family:'Noto Sans', sans-serif
+    @include font-gral;
 }
 header{
     width: 100%;
-    font-family:'Noto Sans', sans-serif;
     align-items: center;
     .navbar-nav{
         display: flex;
@@ -49,8 +58,10 @@ header{
     padding: 0 20px;
 }
 
+h1,h2,h3{
+    @include font-gral;
+}
 h1{
-    font-family:'Noto Sans', sans-serif;
     display: flex;
     justify-content: center;
     font-size: 4.0rem;
@@ -58,12 +69,10 @@ h1{
     color: antiquewhite;
 }
 h2{
-    font-family:'Noto Sans', sans-serif;
     font-size: 2.3rem;
     color: rgb(10, 9, 8);
 }
 h3{
-    font-family:'Noto Sans', sans-serif;
     font-size: 1.5rem;
 }
 
