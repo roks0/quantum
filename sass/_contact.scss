@@ -1,9 +1,21 @@
-/*-------faq------*/
+/*-------contact------*/
+.formContainer{
+    height: 80%;
+    width: auto;
+    align-self: center;
+    justify-self: center;
+    margin-left: 350px;
+}
 fieldset {
     padding: 20px;
     width: 45%;
     margin-bottom: 5px;
     margin-top: 5px;
+}
+.mailingText{
+    font-size: 1.3rem;
+    font-family:'Noto Sans', sans-serif;
+    line-height: 1.2;
 }
 .mailingList{
     font-family: 'Noto Sans' ;
@@ -11,7 +23,7 @@ fieldset {
     font-size: 1.6rem;
     }
 form{
-    height: 50vh;
+    height: 60vh;
     margin-bottom: 10px;
     margin-left: 20px;
 }

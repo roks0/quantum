@@ -18,12 +18,9 @@ html{
     font-family: $primary-font;
 }
 /*-------fin mixings------*/
-body{
-    background-color:beige;
-    @include font-gral;
-}
 header{
     width: 100%;
+    height: 20%;
     align-items: center;
     .navbar-nav{
         display: flex;
@@ -57,6 +54,11 @@ header{
     height: 15vh;
     padding: 0 20px;
 }
+body{
+    height: 60%;
+    background-color:beige;
+    @include font-gral;
+}
 
 h1,h2,h3{
     @include font-gral;
@@ -79,6 +81,8 @@ h3{
 /*-------footer------*/
 
 .footer{
+    height: 20%;
+    width: 100%;
     background-image: url("../assets/banner1.jpg");
     background-repeat: no-repeat;
     background-size: cover;

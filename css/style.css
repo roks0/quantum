@@ -14,13 +14,9 @@ html {
 
 /*-------mixings------*/
 /*-------fin mixings------*/
-body {
-  background-color: beige;
-  font-family: "Noto Sans", sans-serif;
-}
-
 header {
   width: 100%;
+  height: 20%;
   align-items: center;
 }
 header .navbar-nav {
@@ -59,6 +55,12 @@ header .nav-item {
   padding: 0 20px;
 }
 
+body {
+  height: 60%;
+  background-color: beige;
+  font-family: "Noto Sans", sans-serif;
+}
+
 h1, h2, h3 {
   font-family: "Noto Sans", sans-serif;
 }
@@ -82,6 +84,8 @@ h3 {
 
 /*-------footer------*/
 .footer {
+  height: 20%;
+  width: 100%;
   background-image: url("../assets/banner1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,6 +123,13 @@ h3 {
 }
 
 /*-------index------*/
+.carouselText {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  font-size: 16px;
+}
+
 .featuredProductsContainer {
   display: flex;
   justify-content: center;
@@ -151,8 +162,11 @@ h3 {
   height: 100%;
   width: 100%;
   margin: 0;
-  padding: 0;
+  margin-left: 70px;
+  padding: 20px;
   position: relative;
+  justify-self: center;
+  align-self: center;
 }
 
 .newCollectionImage {
@@ -208,12 +222,26 @@ h3 {
   color: rgba(255, 0, 128, 0.394);
 }
 
-/*-------faq------*/
+/*-------contact------*/
+.formContainer {
+  height: 80%;
+  width: auto;
+  align-self: center;
+  justify-self: center;
+  margin-left: 350px;
+}
+
 fieldset {
   padding: 20px;
   width: 45%;
   margin-bottom: 5px;
   margin-top: 5px;
+}
+
+.mailingText {
+  font-size: 1.3rem;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.2;
 }
 
 .mailingList {
@@ -223,7 +251,7 @@ fieldset {
 }
 
 form {
-  height: 50vh;
+  height: 60vh;
   margin-bottom: 10px;
   margin-left: 20px;
 }
@@ -246,6 +274,63 @@ label {
 
 /*-------media queries------*/
 /*-------tablet------*/
+@media only screen and (max-width: 768px) {
+  /*-------estilos generales------*/
+  header {
+    flex-direction: column;
+  }
+  /*-------index------*/
+  .navbar-collapse {
+    display: flex;
+    justify-content: center;
+  }
+  .featuredProductsContainer {
+    flex-direction: column;
+  }
+  /*------contact--------*/
+  .formContainer {
+    margin-left: 250px;
+  }
+  form {
+    height: auto;
+  }
+  /*-------shop------*/
+  .shopMain {
+    margin-left: 0px;
+    padding: 5px;
+  }
+  .shopProducts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .productsDesc {
+    align-self: center;
+    justify-content: flex-start;
+  }
+  article {
+    margin: 2px;
+    margin-top: 6px;
+  }
+  .mainH2 {
+    writing-mode: horizontal-tb;
+    text-orientation: sideways-right;
+  }
+  .newCollectionImage {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  /*-------about------*/
+  .aboutContent {
+    height: 60%;
+    line-height: 1.4;
+    white-space: pre-line;
+  }
+  /*-------footer------*/
+  .footer {
+    justify-content: center;
+  }
+}
 /*-------mobile------*/
 @media only screen and (max-width: 576px) {
   /*-------estilos generales------*/
@@ -261,18 +346,39 @@ label {
     flex-direction: column;
   }
   /*------contact--------*/
+  .formContainer {
+    margin-left: 150px;
+  }
   form {
     height: auto;
     margin-left: 150px;
   }
   /*-------shop------*/
+  .shopMain {
+    margin-left: 0px;
+    padding: 5px;
+  }
   .shopProducts {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-self: center;
+    margin-left: 140px;
   }
   article {
-    margin: 2px;
+    margin: 10px;
+    align-self: center;
+    justify-content: center;
     margin-top: 6px;
+  }
+  .productsItems {
+    padding: 20px;
+    align-self: center;
+    justify-content: center;
+  }
+  .productsDesc {
+    align-self: center;
+    justify-content: flex-start;
   }
   .mainH2 {
     writing-mode: horizontal-tb;
