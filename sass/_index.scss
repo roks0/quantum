@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom:10px;
+    object-fit: contain;
 }
 .mainH2{
     writing-mode: vertical-rl;
@@ -21,7 +22,12 @@
     display: inline-block;
     width: 340px;
     height: 450px;
-}
+    transition: transform 0.3s ease-in-out;
+    perspective: 1000px;
+    transition: transform 0.5s;
+&:hover {
+    transform: rotateY(180deg);
+} }
 .productsDesc{
     margin-left: 20px;
     display: flex;
