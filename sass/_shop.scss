@@ -8,21 +8,6 @@
     justify-self: center;
     align-self: center;
 }
-h2{
-    opacity: 0;
-    transform: translateX(-100%);
-    animation: slide-in 0.5s ease-in-out forwards;
-}
-
-@keyframes slide-in {
-from {
-  opacity: 0;
-  transform: translateX(-100%);
-}
-to {
-  opacity: 1;
-  transform: translateX(0);
-} }
 .newCollectionImage{
     display: flex;
     align-self: center;
