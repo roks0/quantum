@@ -1,9 +1,8 @@
 /*-------shop------*/
 .shopMain{
     height: 100%;
-    width: 100%;
+    width: auto;
     margin: 0;
-    margin-left: 70px;
     padding: 20px;
     position: relative;
     justify-self: center;
@@ -15,6 +14,7 @@
     justify-self: center;
     width: 100%;
     overflow:hidden;
+    margin-left: 70px;
 img {
     max-width: 100%;
     height: auto; 
@@ -25,6 +25,7 @@ img {
 }
 .shopProducts{
     display: flex;
+    justify-content: space-around;
 article {
     margin: 5px;
 }
